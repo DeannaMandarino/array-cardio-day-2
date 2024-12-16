@@ -67,6 +67,17 @@ console.log(allAdults);
 // Array.prototype.find()
 // Find is like filter, but instead returns just the one you are looking for
 // find the comment with the ID of 823423
+const comment = comments.find(function(comment) {
+  if (comment.id === 823423)
+    return true;
+});
+console.log(comment);
+
+  // SIMPLER WAY TO WRITE IT
+
+  /*
+  const comment = comments.find((comment) => comment.id === 823423);
+  */
 
 // Array.prototype.findIndex()
 // Find the comment with this ID
